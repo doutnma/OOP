@@ -18,7 +18,7 @@ class Person:
         Metoda, která vezme parkovací kartu
         :return:
         """
-        print("Parking purchased!!!")
+        print("Parkování informace: Parkování pro Láďu zadarmo, kvůli jeho pokročilejšímu věku!!!")
 
     def get_age(self):
         return 100 + self.__birth
@@ -72,7 +72,8 @@ osoba = Person("Človíček", 1990, "clovek@sps-prosek.cz")
 osoba.purchase_parking_pass()
 
 skola = Address("U Dvou Řeznických psů ", "Vídeň za Rakouska-Uherska", 58000)
-ucitel = Professor("Láďa Řehák nejstarší ", 1945, "ladarehaku@sps-prosek.cz", 16000, 1)
 
 osoba.set_address(skola)
 print(osoba.get_adress())
+
+ucitel = Professor("Láďa Řehák nejstarší ", 1945, "ladarehaku@sps-prosek.cz", 16000, 1)
