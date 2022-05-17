@@ -6,7 +6,7 @@ class Person:
 
     def __init__(self, _name, _birth, _email):
         self.name = _name
-        self.__birth = _birth
+        self.birth = _birth
         self.email = _email
         self.__address = None
 
@@ -18,10 +18,11 @@ class Person:
         Metoda, která vezme parkovací kartu
         :return:
         """
+
         print("Parkování informace: Parkování pro Láďu zadarmo, kvůli jeho pokročilejšímu věku!!!")
 
     def get_age(self):
-        return 100 + self.__birth
+        return 2022 - self.birth
 
     def set_address(self, _address):
         self.__address = _address
@@ -36,7 +37,7 @@ class Professor(Person):
 
     def __init__(self, _name, _birth, _email, _salary, _num):
         super().__init__(_name, _birth, _email)
-        self.salary = _salary
+        self.__salary = _salary
         self.staff_num = _num
 
     def teach(self):
@@ -49,7 +50,7 @@ class Student(Person):
 
     def __init__(self, _name, _birth, _email, _student_number, _mark):
         super().__init__(_name, _birth, _email)
-        self.student_number = _student_number
+        self.__student_number = _student_number
         self.mark = _mark
 
 class Address():
@@ -58,12 +59,12 @@ class Address():
     """
 
     def __init__(self, _street, _city, _postal_code):
-        self.street = _street
-        self.city = _city
-        self.postal_code = _postal_code
+        self.__street = _street
+        self.__city = _city
+        self.__postal_code = _postal_code
 
     def __str__(self):
-        return self.street + "," + self.city
+        return self.__street + "," + self.__city
 
     def __validate(self):
         return True
@@ -71,9 +72,10 @@ class Address():
 osoba = Person("Človíček", 1990, "clovek@sps-prosek.cz")
 osoba.purchase_parking_pass()
 
-skola = Address("U Dvou Řeznických psů ", "Vídeň za Rakouska-Uherska", 58000)
+skola = Address("U Dvou Řeznických Psů ", "Vídeň za Rakouska-Uherska", 58000)
 
 osoba.set_address(skola)
 print(osoba.get_adress())
 
-ucitel = Professor("Láďa Řehák nejstarší ", 1945, "ladarehaku@sps-prosek.cz", 16000, 1)
+ucitel = Professor("Láďa Řehák nejstarší ", 1875, "ladarehaku@sps-prosek.cz", 100000, 4)
+zak = Student("Vlastík Vrtulník", 2005, "plaminek@email.cz", 20, 5)
