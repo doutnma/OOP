@@ -1,16 +1,40 @@
-# This is a sample Python script.
+class Cesko:
+    def hlavni_mesto(self):
+        print("Praha")
+    def pocet_obyvatel(self):
+        print("10,700,000")
+    def jazyk(self):
+        print("Čeština")
+    def nabozenstvi(self):
+        print("Převážně Ateismus")
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+class Mexiko:
+    def hlavni_mesto(self):
+        print("Ciudad de Mexico")
+    def pocet_obyvatel(self):
+        print("128,400,000")
+    def jazyk(self):
+        print("Španělština")
+    def nabozenstvi(self):
+        print("Křesťanství")
 
+class Thajsko:
+    def hlavni_mesto(self):
+        print("Bangkok")
+    def pocet_obyvatel(self):
+        print("68,414,000")
+    def jazyk(self):
+        print("Thajština")
+    def nabozenstvi(self):
+        print("Budhismus")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def zakladni_info(instance):
+    instance.hlavni_mesto()
+    instance.pocet_obyvatel()
+    instance.jazyk()
 
+staty = []
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+staty.append(Cesko)
+staty.append(Thajsko)
+staty.append(Mexiko)

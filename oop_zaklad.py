@@ -78,4 +78,4 @@ osoba.set_address(skola)
 print(osoba.get_adress())
 
 ucitel = Professor("Láďa Řehák nejstarší ", 1875, "ladarehaku@sps-prosek.cz", 100000, 4)
-zak = Student("Vlastík Vrtulník", 2005, "plaminek@email.cz", 20, 5)
+zak = Student("Jan Brousek Official", 2005, "brouskos@email.cz", 3, 5)

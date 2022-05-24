@@ -81,7 +81,7 @@ class Krupier:
             print(karta)
 
 b1 = Balicek()
-h1 = Hrac("Spratek")
+h1 = Hrac("Spratek_Official")
 k1 = Krupier()
 
 k1.rozdej(b1, 2, h1)
